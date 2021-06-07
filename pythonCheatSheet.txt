@@ -1,0 +1,16 @@
+ pip  or preffered installer program: 
+ This is a package-management system written in python used to install and manage python software packages.
+ python package index:
+ Public repo of open source licensed packages made available for use by other python users.
+
+
+1. checking the Pip istalled on your machine
+   python -m pip --version
+2. add to path on system variable
+3. pip --version // shows the pip version on your machine.
+4.  python -m pip list --outdated //list outdated packages
+5. python -m pip install --upgrade SomePackage // upgrade a package
+6. python -m pip uninstall SomePackage // uninstall a package
+
+ 
+
