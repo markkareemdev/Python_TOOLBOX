@@ -50,3 +50,42 @@
 # print(p)
 
 # print(s[4:18])
+
+
+#Python set
+# set an unordered collection of unique items
+# defined by values seperated by comma inside curly braces
+# as an unordered collection of items,
+#  indexing or the slicing opertor does not work
+# for an the same item, it returns only just one  because the data type is unordred
+
+# a = {5,4,5,6,6,6,7,8} 
+# print(a," is a type of " , type(a))
+# b = {1,2,3,4,5}
+# print(b)
+
+#6
+# Python Dictionary
+# an unordered collection of key value pairs
+# python dictionary is just python set with key value.
+# This makes indexing or the slicing operators to work 
+# fine with the key value pairs.
+
+# d = {1:'value', 'key':2}
+# d[1] = "mark"
+# print(d[1], d["key"], type(d))
+
+# Conversion between data types
+# coversion functions  int(), float(), str()
+# a = int(10.236)
+# b = int(-80.268)
+# c = int('2')
+# d = float('2.5')
+# e = str(100)
+# favList = [1,2,3,4]
+# favWord = ('hello world')
+# f = set(favList)
+# g = tuple(favList)
+# h = list(favWord)
+
+# print(a, b, c, d, e, f, g, h, )
