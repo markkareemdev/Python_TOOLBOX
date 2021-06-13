@@ -472,6 +472,12 @@
 # Python functions
 # The variable name used here is "def"
 # its a standard practice here  to always document your functions
+# Python return statement is just like he js return statement.
+# variable declared ina function are local to it have a local scope. Their life-time expires when the function executes
+# Types of functions
+    # Built-in functions
+    # User-defined functions
+# Python also accepts recursion
 
 # example
 # def greet_people(name):
@@ -488,13 +494,6 @@
 # # how to get the documentatation of the function
 # print(greet_people.__doc__)
 
-# Python return statement is just like he js return statement.
-# variable declared ina function are local to it have a local scope. Their life-time expires when the function executes
-# Types of functions
-    # Built-in functions
-    # User-defined functions
-# Python also accepts recursion
-
 # excercise the fibonnaci code
 # def fibonacci(num):
 #     if num == 0:
@@ -503,3 +502,12 @@
 #         return num*fibonacci(num - 1)
 
 # print(fibonacci(10))
+
+# Variable scope in python
+# it follows the "LEGB" 
+    # L: local scope : vaariables define in a functio
+    # E: enclosed scope: variables defined in a nested function
+    # G: Global scope: variables defined outside a function
+    # B: built in scope: reserved keywords basically.
+
+
