@@ -439,3 +439,67 @@
 #    new_list_element = int(original_list[i])
 #    new_original_list.append(new_list_element)
 # print(new_original_list)
+
+
+# Excercise 1
+# write a program that return a list of numbers and calculates the average
+# number_list = [1,2,3,4,5,6]
+# print('number_list: ', number_list)
+# sum = 0
+# for i in range(0, len(number_list)):
+#     sum = sum + number_list[i]
+# average = sum / len(number_list)
+# print("average: ", average)
+
+
+# Excercise 2
+# for i in range(0,3):
+#     for j in range(1,4):
+#         print("i is ",i," j is ", j)
+
+# excercise 3
+
+# number_list = [1]
+# number_input = int(input("Please enter an interger greater than 1: "))
+# number_list.append(number_input)
+# sum = 0
+# for i in range(0, len(number_list)):
+#     sum = sum + number_list[i]
+# average = sum / len(number_list)
+# print('average: ', average)
+
+
+# Python functions
+# The variable name used here is "def"
+# its a standard practice here  to always document your functions
+
+# example
+# def greet_people(name):
+#     """
+#     The text right here is called the docstring,
+#     it is to tell the reader what this function does
+#     This function greets
+#     everyone whose name is enrolled.
+#     """
+#     print("Hello " + name + " .Good morning")
+
+# greet_people("mark")
+
+# # how to get the documentatation of the function
+# print(greet_people.__doc__)
+
+# Python return statement is just like he js return statement.
+# variable declared ina function are local to it have a local scope. Their life-time expires when the function executes
+# Types of functions
+    # Built-in functions
+    # User-defined functions
+# Python also accepts recursion
+
+# excercise the fibonnaci code
+# def fibonacci(num):
+#     if num == 0:
+#         return 1
+#     else:
+#         return num*fibonacci(num - 1)
+
+# print(fibonacci(10))
