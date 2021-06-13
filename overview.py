@@ -261,10 +261,181 @@
      # in,returns a boolean, usage: x in y
      # not in ,returns a boolean, usage: x not in y
 
-# Python bitwise operators are used to compare binary numbers
+# Python bitwise operators are used to compare bnary numbers
+
+#Python  Selection statements
+    # if statement
+    # if-else statement
+    # if-elif statement
 
 
-print( 4 < 5 and 8 > 5 )
-print( 4 < 5 & 8 > 5 )
-print( 8 > 5)
-    
+
+
+# example 1.. if
+# num = int(input('Enter any number: '))
+# if ( num % 5 == 0):
+#     print(f'Given number {num} is divisible by 5')
+
+
+# # example 2.. if-else
+# num = int(input('Enter any number: '))
+# if ( num % 5 == 0):
+#     print(f'Given number {num} is divisible by 5')
+# else :
+#     print("number is not divisible at all")
+
+# example 3.. if-elif
+
+# choice = input(f'which game do you like, press\nC - Cricket\nH - Hokey: ')
+# if choice == 'C':
+#     print ('You are a Cricketeer!')
+# elif choice == 'H':
+#     print("Your are a hockey player")
+# else:
+#     print('YOu are not interested in Sports')
+
+# template liteal equivalent of java script 
+ # usage:
+          # '%d' for rounded figure
+          # '%s'
+          # '%g' 
+          # '%f' for decimal ouput 
+# cost = 10
+# print('The cost is #%s' %cost )
+
+# Python short-circuit evaluation
+# This happens when a logical operator is used: 'AND' precisely.
+# since the two statements must evaluate to true to return True. all python dose is to evaluate one to determine the neccessary step
+
+
+# example code snippets
+
+# Example1: Temperature gauge.
+# temperature = float(input("Please input the currnt temperature reading:  "))
+# if temperature < 0:
+#     print('Below freezing point')
+# elif (temperature >= 0 and temperature <= 10):
+#     print('very cold')
+# elif (temperature > 10 and temperature <= 20):
+#     print('Chilly')
+# elif (temperature > 20 and temperature <= 30):
+#     print('Warm')
+# elif (temperature > 30 and temperature <= 40):
+#     print('Hot')
+# else:
+#     print("Too hot")
+
+# Example2: Student grade system
+
+# student_number = input('Please enter your student number: ')
+# tutorial_mark = float(input("Pleases enter the student's tutorial mark:  "))
+# test_mark = float(input("Please enter the student's test mark: "))
+# grade_average = float( tutorial_mark + test_mark) / 2
+
+# if grade_average < 40 :
+#     grade = "F"
+# else:
+#      exam_mark = float(input("Please enter the student's final examination mark: "))
+#      mark = (tutorial_mark + test_mark + 2 * exam_mark) / 4
+
+#      if 80 <= mark <= 100:
+#         grade = "A"
+#      elif 70 <= mark < 80:
+#          grade = "B"
+#      elif 60 <= mark < 70:
+#         grade = "C"
+#      elif 50 <= mark < 60:
+#         grade = "D"
+#      else:
+#         grade = "E"
+
+
+# print ("%s's grade is %s." % (student_number, grade))
+
+# Python controlled structures or Repetition.
+# Repetition statements are called loops.
+# loops are divided  into ..
+                   # condition-controlled :while loop,do-while loop.
+                   # count-Countrolled : for loops
+
+# While algorithm example.
+
+# keep_going = 'y'
+# while keep_going == 'y':
+#     sales = float(input('Please enter the amount of sales: '))
+#     comm_rate = float(input('Enter the commission rate: '))
+#     commission = sales * comm_rate
+#     print('The commision is $%.2f' %commission)
+#     keep_going = (input('Do you want to calculate another  ' + 'commission (Enter y for yes): ').lower())
+
+# Whrn the last statement of the above code is not there then this becomes an infinite loop.
+
+# For loop algorithm example
+
+# Example 1
+# numbers = [1, 2, 3, 4, 5]
+# for num in numbers:
+#     print(num)
+
+# Example 2
+# for loop and range
+
+# for num in range(1,10):
+#     print(num)
+
+# for num in range(1,10,2):
+#     print(num)
+
+# # square Table
+# # Table heading
+# print('%-10s%-10s' %("Number", "Square"))
+# print('------------------------')
+# # print the numbers 1 to 10
+# # and their squares
+# for number in range(1,11):
+#     square = number**2
+#     print('%10d%10d' % (number, square))
+
+# Algorithm for enetring names
+# names = []
+# done_Entering = False
+# while (not done_Entering):
+#         name = input("Enter a name, or leave blank when done: ")
+#         name = name.strip()
+#         if name == "":
+#             done_Entering = True
+#         else:
+#             names.append(name)
+# print(names)
+
+
+# index based algorithm and for-each style algorithm
+# index based uses range an its used when the elements are to bre processed differently
+# for-each based uses the normal for loop , it is used when the elements are to be processed the same way.
+
+# animals = ['Cat', 'Monkey', 'Zebra', 'Goat']
+
+# # For-each style of loop
+# for animal in animals :
+#     print(animal)
+# print("")
+# # For the indexed- based approach
+# for i in range(0, len(animals)):
+#     print(animals[i])
+
+
+# Mutating a list: changing from one data type to the other
+
+# original_list = ["2", "3", "4", "5", "1"]
+# for i in range(0, len(original_list)):
+#     original_list[i] = int(original_list[i])
+# print(original_list)
+
+# Mutating a list and storing it in another
+
+# original_list = ["2", "3", "4", "5", "1"]
+# new_original_list = []
+# for i in range(0, len(original_list)):
+#    new_list_element = int(original_list[i])
+#    new_original_list.append(new_list_element)
+# print(new_original_list)
