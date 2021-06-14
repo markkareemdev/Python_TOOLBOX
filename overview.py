@@ -511,3 +511,48 @@
     # B: built in scope: reserved keywords basically.
 
 
+# Python class
+
+# class HumanBeing:
+#     "This is a person class"
+#     age =  10
+
+#     def __init__(self,name):
+#         self.name = name
+
+
+#     def greet(name):
+#         print('hello ' + name)
+
+# print(HumanBeing.age)
+# print(HumanBeing.greet("mark"))
+# print(HumanBeing.__doc__)
+
+# Creating an object
+
+# print(HumanBeing())
+# print(HumanBeing())
+
+
+
+class Dog:
+    species = 'canis familiaris'
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def description(self):
+        return f"{self.name} is {self.age} years old"
+
+    def speak(self,sound):
+        return f"{self.name} says {sound}"
+
+miles = Dog("Miles", 4)
+miles.description()
+    
+
+
+
+
+
